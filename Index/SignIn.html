@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>StoryBoat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+
+    </script>
+<script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+    <script src=" file:///E:/StoryBoat/app.js"></script>
+
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+					<img src="assets/css/images/storyboat.png" height="200px" width="450px;"><br>
+						 
+						 <div id="firebaseui-auth-container"></div> 
+						<div id="loader">Loading...</div>
+
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+					 
+						<span class="copyright"> <a href="#">&copy; StoryBoat 2018.</a></span>
+					</footer>
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	 
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
